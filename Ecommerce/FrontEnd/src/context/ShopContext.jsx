@@ -2,7 +2,7 @@ import React, { createContext, useContext, useState, useEffect } from 'react';
 
 const ShopContext = createContext();
 
-const API_URL = 'http://localhost:5000/api';
+const API_URL = '/api';
 
 export const ShopProvider = ({ children }) => {
     const [user, setUser] = useState(null);

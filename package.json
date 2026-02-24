@@ -1,0 +1,9 @@
+{
+    "name": "shopiiee-root",
+    "version": "1.0.0",
+    "private": true,
+    "dependencies": {
+        "@netlify/blobs": "^7.3.0"
+    },
+    "packageManager": "npm@10.2.4"
+}
