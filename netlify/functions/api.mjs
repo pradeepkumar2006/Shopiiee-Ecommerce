@@ -1,7 +1,5 @@
 import { getStore } from '@netlify/blobs';
-import { createRequire } from 'module';
-const require = createRequire(import.meta.url);
-const localProducts = require('../../Ecommerce/BackEnd/data/products.js');
+import localProducts from './products.mjs';
 
 export default async (req, context) => {
     const url = new URL(req.url);
