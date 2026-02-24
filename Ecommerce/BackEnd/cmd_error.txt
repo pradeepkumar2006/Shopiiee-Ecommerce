@@ -1,0 +1,9 @@
+C:\Users\HP\OneDrive\Pictures\Desktop\FullStack\Ecommerce\BackEnd\data\products.js:623
+        description: "7" display, adjustable warm light, waterproof.",
+                         ^^^^^^^
+
+SyntaxError: Unexpected identifier 'display'
+    at wrapSafe (node:internal/modules/cjs/loader:1638:18)
+    at checkSyntax (node:internal/main/check_syntax:78:3)
+
+Node.js v22.19.0
