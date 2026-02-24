@@ -3,7 +3,7 @@ import localProducts from './products.mjs';
 
 export default async (req, context) => {
     const url = new URL(req.url);
-    const path = url.pathname.replace(/^\/api\//, '');
+    const path = url.pathname.replace(/^.*?\/api\/?/, '');
     const method = req.method;
 
     // Initialize Netlify Blobs stores

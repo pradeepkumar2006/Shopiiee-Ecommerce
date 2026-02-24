@@ -1,16 +1,10 @@
 [build]
-  base = "Ecommerce/FrontEnd"
-  command = "npm run build"
-  publish = "dist"
+  command = "npm --prefix Ecommerce/FrontEnd install && npm --prefix Ecommerce/FrontEnd run build"
+  publish = "Ecommerce/FrontEnd/dist"
 
 [functions]
   node_bundler = "esbuild"
   directory = "netlify/functions"
-  
-[[redirects]]
-  from = "/api/*"
-  to = "/.netlify/functions/api"
-  status = 200
 
 [[redirects]]
   from = "/*"
